@@ -1,3 +1,13 @@
 This is stage-1:commit automation;Jenkins.........
-sTiLl mORe tO gO......
+
+pipeline {
+    agent any
+    stages{
+        stage('Source code  fetch'){
+            steps{
+                git branch: 'main', url: 'https://github.com/MrDruv/devops-cicd-git.git'
+            }
+        }
+     }
+}
 
