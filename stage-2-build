@@ -1,2 +1,16 @@
 This is stage-2 "build-with-Maven"
-
+pipeline {
+    agent any
+    stages{
+        stage('Source code  fetch'){
+            steps{
+                git branch: 'main', url: 'https://github.com/MrDruv/devops-cicd-git.git'
+            }
+        }
+        stage('Build code using Maven'){
+            steps{
+                echo "Build Success"
+            }
+        }
+    }
+ }
