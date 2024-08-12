@@ -10,6 +10,7 @@ pipeline {
         stage('Build code using Maven'){
             steps{
                 echo "Build Success"
+		echo "not Integrated maven in this course"
             }
         }
     }
